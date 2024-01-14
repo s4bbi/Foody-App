@@ -1,5 +1,118 @@
-#parent{
-    color: aquamarine;
+body{
     text-align: center;
     font-family: poppins;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.2s;
+    color: #333;
+}
+
+a:hover{
+    
+    color: #F8C756;
+}
+
+
+.logo{
+    width:70px;
+    height:70px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.search{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.searchBar{
+    width: 600px;
+    height: 30px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9c9c9c;
+}
+
+.filter-btn{
+    cursor: pointer;
+    border: 1px solid #9c9c9c;
+    border-radius: 12px;
+    transition: 0.2s;
+    font-family: poppins;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    height: 40px;
+}
+
+.top{
+    margin-left: 20px;
+}
+
+.filter-btn:hover{
+    scale: 1.05;
+    background-color: #F8C756;
+}
+
+.cards{
+    padding: 30px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+.imageDiv{
+    width: 190px;
+    height: 140px;
+}
+
+.image{
+    width: 190px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+
+}
+
+.card1{
+    background-color:  #f0f0f0;;
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.card1:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.cuisineName, .time, .rating{
+    font-size: 12px;
+    color:#9c9c9c;
+    font-weight: 500;
+}
+
+.restName{
+    font-size: 15px;
+    margin-bottom: 10px;
 }
