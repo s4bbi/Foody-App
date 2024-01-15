@@ -8,7 +8,6 @@ import CardsDiv from "./components/CardsDiv"
  const Body = () => {
   return (
     <div className="body">
-        <SearchBar/>
         <CardsDiv/>
     </div>
   )

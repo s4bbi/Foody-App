@@ -36,15 +36,16 @@ ul{
 }
 
 .search{
-    padding-top: 30px;
     display: flex;
-    justify-content: space-around;
+    width: 600px;
+    margin-left: auto ;
+    margin-right: auto;
 }
 
 .searchBar{
     width: 600px;
-    height: 30px;
-    font-size: 18px;
+    height: 20px;
+    font-size: 14px;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #9c9c9c;
@@ -61,21 +62,41 @@ ul{
     height: 40px;
 }
 
+.btn{
+    background-color: #f0f0f0;
+    width: 80px;
+    border-radius: 12px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: poppins;
+}
+
+.btn:hover{
+    background-color: #F8C756;
+}
+
 .top{
     margin-left: 20px;
 }
 
 .filter-btn:hover{
-    scale: 1.05;
+    
     background-color: #F8C756;
 }
 
 .cards{
-    padding: 30px 100px;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 80px;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    
+}
+
+.body{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imageDiv{
@@ -115,4 +136,20 @@ ul{
 .restName{
     font-size: 15px;
     margin-bottom: 10px;
+}
+
+.shimmer-container{
+    padding: 100px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.shimmer-card{
+    width: 200px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    animation: shimmer 2s infinite linear;
 }
