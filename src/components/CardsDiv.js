@@ -4,7 +4,7 @@ import Shimmer from "./Shimmer";
 
 
 const CardsDiv = () => {
-  let [listOfRest, setListOfRest] = useState([]);
+  let [listOfRest, setlistOfRest] = useState([]);
   let [filteredRest, setfilteredRest] = useState([])
   let [searchText, setsearchText] = useState("")
 
@@ -15,13 +15,13 @@ const CardsDiv = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-        "https://www.swiggy.com/api/seo/getListing?lat=19.2133035606211&lng=72.87611371920241"
+        "https://www.swiggy.com/api/seo/getListing?lat=28.67003492726483&lng=77.11469986756225"
     );
 
     const json = await data.json();
 
     console.log(json);
-    setListOfRest(json?.data?.success?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setlistOfRest(json?.data?.success?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setfilteredRest(json?.data?.success?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
   
@@ -41,7 +41,7 @@ const CardsDiv = () => {
                 );
 
                 
-                setListOfRest(filteredRest);
+                setfilteredRest(filteredRest);
 
             }}>Search</button>
         </div>
@@ -49,7 +49,7 @@ const CardsDiv = () => {
       <button
             className="all filter-btn"
             onClick={() => {
-                setListOfRest(resList);
+                setlistOfRest(listOfRest);
             }}
             >
             All Restaurants
