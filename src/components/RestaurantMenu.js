@@ -30,10 +30,10 @@ if (resInfo === null){
     ); 
 } 
 
-    const {name, cuisines, costForTwoMessage} = resInfo?.data?.cards[2]?.card?.card?.info;
+    const {name, cuisines, costForTwoMessage} = resInfo?.data?.cards[2]?.card?.card?.info ?? {}
 
-    const {itemCards} = resInfo?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
-
+    const {itemCards} = resInfo?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card ?? {};
+    
     return (
         <div className="restaurant-menu">
             <h1>{name}</h1>
