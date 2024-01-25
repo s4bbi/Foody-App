@@ -28,5 +28,15 @@ const Cards = (props) => {
     );
 } 
 
+export const withPromotedLabel = (Cards) => {
+    return (props) => {
+        return (
+            <div> 
+                <label className="absolute bg-black text-white rounded-lg p-1  "> Promoted </label>
+                <Cards {...props}/>
+            </div>
+        )
+    }
+}
 
 export default Cards 

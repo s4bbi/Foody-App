@@ -20,6 +20,7 @@ const Header = () => {
                     <li className="hover:text-yellow" ><Link to="/about">About Us</Link></li>
                     <li className="hover:text-yellow" ><Link to="/Contact">Contact Us</Link></li>
                     <li className="hover:text-yellow" ><Link to="/grocery">Grocery Store</Link></li>
+                    <li className="hover:text-yellow" ><Link to="/cart">Cart</Link></li>
                     <button className='border rounded-lg px-2 hover:bg-yellow' onClick={() => {btnName === "Login" ? setbtnName("Logout") : setbtnName("Login")}}>{btnName}</button>
                 </ul>
             </div> 
