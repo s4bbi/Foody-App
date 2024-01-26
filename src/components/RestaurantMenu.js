@@ -10,19 +10,11 @@ const RestaurantMenu = () => {
 
   const [showIndex, setshowIndex] = useState(0)
 
-  console.log(resInfo)
-
   if (resInfo === null) {
     return <Shimmer />;
   }
-    
-  console.log("huihuyi")
-  console.log(resInfo)
-
   
-
   const {itemCards} = resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card ?? {};  
-
 
   console.log(itemCards)
 
@@ -35,13 +27,12 @@ const RestaurantMenu = () => {
       );
     }
   );
-  
-  // console.log(categories)
 
   return (
     <div className="text-center">
       <h2 className="text-3xl font-bold pb-5">Our Menu</h2>
       {categories?.map((category, index) => {
+        const categoryId = category?.card?.card?.id ;
         return (
           <RestaurantCategories
             key={category?.card?.card?.id}
