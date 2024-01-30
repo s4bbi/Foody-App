@@ -34,7 +34,7 @@ const CardsDiv = () => {
 
   if (onlineStatus === false) {
     return (
-      <h1>Looks like you are Offline 😿, try checking your connection.</h1>
+      <h1 className="text-2xl font-bold text-center p-10">Looks like you are Offline 😿, try checking your connection.</h1>
     );
   }
 

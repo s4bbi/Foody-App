@@ -7,7 +7,6 @@ class About extends React.Component{
         super(props);
 
     }
-    
 
     render() {
 
@@ -17,8 +16,6 @@ class About extends React.Component{
                 <UserClass />
             </div>
         )
-}}
-
-    
+}}  
 
 export default About;
