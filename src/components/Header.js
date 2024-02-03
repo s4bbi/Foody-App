@@ -1,4 +1,3 @@
-import logo from '../../images/logo.png'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from '../utils/useOnlineStatus';
@@ -25,12 +24,11 @@ const Header = () => {
     
 
     const cartItems = useSelector((store) => store.cart.items)
-    console.log(cartItems)
 
     return (
         <div className="flex justify-between px-10">
             <Link to="/">
-                <img className="w-20" src={logo} alt="Foody App Logo"/>
+                <img className="w-24" src="https://t3.ftcdn.net/jpg/04/03/74/22/360_F_403742248_8DDzcFF4jw05lWqftk2yxzKRpFvpZ01Y.jpg" alt="Foody App Logo"/>
             </Link>
             <div className='flex items-center'>
                 <ul className='flex items-center gap-5'>
