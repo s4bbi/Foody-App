@@ -1,8 +1,9 @@
 import {CDN_URL} from "../utils/constants.js"
 
-
 const Cards = (props) => {
     const { resData } = props;
+
+    console.log(resData);
 
     const {
         cloudinaryImageId,
