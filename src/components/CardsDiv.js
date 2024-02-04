@@ -44,8 +44,8 @@ const CardsDiv = () => {
 
   return (
     <div className="mx-16">
-      <div className="search my-5 mx-auto flex justify-center">
-        <input
+      <div className="search my-5 mx-auto flex justify-center" >
+        <input data-testid="searchInput"
           className="w-96 h-10 border border-solid rounded-lg p-2"
           type="text"
           placeholder="Search for restaurants and food"

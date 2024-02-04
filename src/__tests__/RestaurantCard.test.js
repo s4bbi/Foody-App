@@ -14,7 +14,7 @@ it("should render the restaurant Card", () => {
 it("should render promoted label if the restaurant is promoted or not", () => {
     render(<Cards resData={MOCK_DATA} />);
 
-    let promoLabel = screen.queryByTestId(/promoted/i);
+    const promoLabel = screen.queryByTestId(/promoted/i);
     expect(promoLabel).not.toBeInTheDocument();
 
 })
