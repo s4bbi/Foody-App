@@ -4,9 +4,27 @@ import appStore from "../utils/appStore";
 import Header from "../components/Header";
 import {BrowserRouter} from "react-router-dom";
 import "@testing-library/jest-dom";
+import { beforeEach } from "node:test";
 
 
 describe("Header Test Cases", () => {
+
+    beforeAll(() => {
+        console.log("Before All")
+    })    
+    
+    beforeEach(() => {
+        console.log("Before Each")
+    })
+
+    afterAll(() => {
+        console.log("After All")
+    })
+
+    afterEach(() => {
+        console.log("After Each")
+    })
+
         it("Should render Login Button in the Header component", () => {
         render(
             <BrowserRouter>
