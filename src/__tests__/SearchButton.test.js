@@ -42,4 +42,40 @@ it("Should render the Search Button in the Body component",  async () => {
 
     expect(cardsAfterSearch.length).toBe(2)
 
+}),
+
+it("should render the filtered restaurants when Top Rated Restaurants button is clicked", async () => {
+    await act( async () => {
+        render(
+            <BrowserRouter>
+                <CardsDiv/>
+            </BrowserRouter>
+        )
+    });
+
+    const topRatedButton = screen.getByRole("button", {name: "Top Rated Restaurants"}) 
+
+    fireEvent.click(topRatedButton)
+
+    const cards = screen.getAllByTestId("resCard")
+
+    expect(cards.length).toBe(14)
+}),
+
+it("Should render all the cards when the All Restaurants button is clicked", async () => {
+    await act ( async () => {
+        render(
+            <BrowserRouter>
+                <CardsDiv/>
+            </BrowserRouter>
+        )
+    })
+
+    const allRestaurantButton = screen.getByRole("button", {name: "All Restaurants"})
+
+    fireEvent.click(allRestaurantButton)
+
+    const allCards = screen.getAllByTestId("resCard")
+
+    expect(allCards.length).toBe(16)
 })
