@@ -13,7 +13,7 @@ const ItemList = ({ items }) => {
   return (
     <div>
       {items?.map(item => (
-        <div key={item?.card?.info?.id} className="flex py-2 my-2 border-b-2 text-left items-start">
+        <div key={item?.card?.info?.id} className="flex py-2 my-2 border-b-2 text-left items-start" data-testid="menuItems">
           <div className="flex-grow w-9/12">
             <span className="flex text-l font-regular">{item?.card?.info?.name}</span>
             <span className="text-sm font-regular pt-1">₹ {item?.card?.info?.price ? item?.card?.info?.price/100 : item?.card?.info?.defaultPrice/100}</span>

@@ -43,7 +43,7 @@ const Header = () => {
                                 <img src='https://cdn-icons-png.flaticon.com/512/1170/1170678.png' className='w-6'></img> 
                             </Link>     
                         </li>
-                        <li cl>{cartItems.length}</li>
+                        <li>{cartItems.length}</li>
                     </div>
                     <button className='border border-yellow rounded-lg px-2 hover:bg-yellow' onClick={() => {btnName === "Login" ? setbtnName(loggedInUser) : setbtnName("Login")}}>{btnName}</button>
                 </ul>
